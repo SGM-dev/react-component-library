@@ -4,15 +4,13 @@ This is a React Component Library that provides a collection of reusable UI comp
 
 ## Components
 
-### Component 1
+### Button
 
-The Component 1 is located in its own folder within the repository. You can find it at `src/components/Component1`. This component has its own files and assets required for its functionality.
+The Button is located in its own folder within the repository. You can find it at `src/components/Button`. This component has its own files and assets required for its functionality.
 
 ### Component 2
 
 Similar to Component 1, Component 2 is located in its respective folder at `src/components/Component2`. It contains its necessary files and assets.
-
-_(You can list additional components following a similar structure and description here.)_
 
 ## Usage
 
