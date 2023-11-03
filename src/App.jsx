@@ -1,10 +1,10 @@
 import "./App.css";
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 
 function App() {
   return (
     <main>
-      <Button text="Click Here"></Button>
+      <Button>Click Here</Button>
     </main>
   );
 }
