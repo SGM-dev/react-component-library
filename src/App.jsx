@@ -5,7 +5,7 @@ import Avatar from "./components/Avatar/Avatar";
 function App() {
   return (
     <main>
-      <section>
+      {/* <section>
         {" "}
         <Button
           size="sm"
@@ -21,7 +21,7 @@ function App() {
         <Avatar>BZ</Avatar>
         <br />
         <Avatar />
-      </section>
+      </section> */}
     </main>
   );
 }
