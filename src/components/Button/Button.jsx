@@ -8,8 +8,8 @@ export default function Button({
   className,
   ...rest
 }) {
-  const sizeClass = size ? `button-${size}` : "";
-  const variantClass = variant ? `button-${variant}` : "";
+  const sizeClass = size && `button-${size}`;
+  const variantClass = variant && `button-${variant}`;
 
   const allClasses = classNames(sizeClass, variantClass, className);
 
