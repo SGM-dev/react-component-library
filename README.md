@@ -4,9 +4,9 @@ This is a React Component Library that provides a collection of reusable UI comp
 
 ## Components
 
-### Button
+The components are located in its own folder within the repository. You can find it at `src/components/{Component}`. Each component has its own files and assets required for its functionality.
 
-The Button is located in its own folder within the repository. You can find it at `src/components/Button`. This component has its own files and assets required for its functionality.
+### Button
 
 This Component uses two props for customization.
 
@@ -21,9 +21,19 @@ This Component uses two props for customization.
 
 Ex: pass the props as `variant="danger" size="md"` to the component.
 
-### Component 2
+### Avatar
 
-Similar to Component 1, Component 2 is located in its respective folder at `src/components/Component2`. It contains its necessary files and assets.
+This component uses two props and React children for customization.
+
+1. `src`
+    - this takes in the location of profile photo if it exists.
+
+2. `alt`
+    - This takes in the alt attribute of the image.
+
+3. Provide initials as children to render them in the avatar.
+
+4. Leave the props and children empty if you need the Anonymous variant.
 
 ## Usage
 
