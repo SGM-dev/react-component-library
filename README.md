@@ -8,6 +8,11 @@ This is a React Component Library that provides a collection of reusable UI comp
 
 The Button is located in its own folder within the repository. You can find it at `src/components/Button`. This component has its own files and assets required for its functionality.
 
+This Component uses two props for customization.
+
+1.  `size` - `sm` for small, `md` for medium and `lg` for large. Ex: pass the prop as `size="sm"` to the component.
+2.  `variant` - `success` for success, `warning` for warning and `danger` for danger. Ex: pass the prop as `variant="danger"` to the component.
+
 ### Component 2
 
 Similar to Component 1, Component 2 is located in its respective folder at `src/components/Component2`. It contains its necessary files and assets.
