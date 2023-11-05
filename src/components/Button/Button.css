@@ -24,3 +24,18 @@ button.button-lg {
 .green {
   color: green;
 }
+
+button.button-success {
+  border: 1px solid #047857;
+  color: #047857;
+}
+
+button.button-warning {
+  border: 1px solid #fbbf24;
+  color: #fbbf24;
+}
+
+button.button-danger {
+  border: 1px solid #f87171;
+  color: #f87171;
+}
