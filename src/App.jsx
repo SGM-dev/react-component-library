@@ -3,9 +3,10 @@ import Button from "./components/Button/Button";
 import { FaMoneyBill } from "react-icons/fa";
 
 function App() {
+
   return (
     <main>
-      <Button>
+      <Button onClick={() => console.log("...logging in")}>
         <FaMoneyBill />
         Click Here
       </Button>
