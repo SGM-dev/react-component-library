@@ -1,9 +1,11 @@
-import {IoPersonSharp} from "react-icons/io5"
-import "./Avatar.css"
+import { IoPersonSharp } from "react-icons/io5";
+import "./Avatar.css";
+import classNames from "classnames";
 
+export default function Avatar({ children, src, alt, ...rest }) {
+  const avatarClass = !src && (children ? "avatar-letters" : "avatar-icon");
 
-export default function Avatar(props) {
-    return (
-        <h2>Avatar Component</h2>
-    )
+  const allClasses = classNames("avatar", avatarClass);
+
+  return <div className={allClasses}></div>;
 }
