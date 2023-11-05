@@ -10,8 +10,16 @@ The Button is located in its own folder within the repository. You can find it a
 
 This Component uses two props for customization.
 
-1.  `size` - `sm` for small, `md` for medium and `lg` for large. Ex: pass the prop as `size="sm"` to the component.
-2.  `variant` - `success` for success, `warning` for warning and `danger` for danger. Ex: pass the prop as `variant="danger"` to the component.
+1.  `size`
+    - `sm` for small,
+    - `md` for medium and
+    - `lg` for large.
+2.  `variant`
+    - `success` for success,
+    - `warning` for warning and
+    - `danger` for danger.
+
+Ex: pass the props as `variant="danger" size="md"` to the component.
 
 ### Component 2
 
