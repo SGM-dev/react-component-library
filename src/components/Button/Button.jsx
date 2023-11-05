@@ -1,10 +1,12 @@
 import "./Button.css";
 
+export default function Button({ children, size, ...rest }) {
+  const sizeClass =
+    (size === "sm" && "button-small") || (size === "lg" && "button-large");
 
-function Button(props) {
-return (
-    <button onClick={props.onClick} >{props.children}</button>
-)
+  return (
+    <button className={sizeClass} {...rest}>
+      {children}
+    </button>
+  );
 }
-
-export default Button

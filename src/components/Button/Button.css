@@ -12,9 +12,15 @@ button {
   align-items: center;
 }
 
+button.button-small {
+  padding: 7px 11px;
+  font-size: 12px;
+}
 
-button svg {
-margin-right: 0.5em;
-font-size: 1.25em;
-color: green;
+button.button-large {
+  padding: 30px 40px;
+}
+
+.green {
+  color: green;
 }
