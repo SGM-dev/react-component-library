@@ -1,27 +1,34 @@
 import "./App.css";
 import Button from "./components/Button/Button";
 import Avatar from "./components/Avatar/Avatar";
+import Menu from "./components/Menu/Menu";
+
+/**
+ * Challenge:
+ * 1. Convert the Menu component to use props.children
+ *    instead of taking an `items` prop. (We'll update
+ *    the MenuButton and MenuDropdown components later.)
+ *    See note inside the Menu.js file for more info
+ *
+ * 2. import MenuButton and MenuDropdown into THIS file
+ *    and render them as children of the Menu component.
+ *    Remember to pass the buttonText and items array to
+ *    the components that need those props to function.
+ *    (We'll also be updating that soon!)
+ *
+ * NOTE: The functionality of the menu will be broken after
+ * these changes, but that's okay! As such, don't worry
+ * about moving the state or toggle function from the Menu;
+ * there's more we need to learn before we can do that.
+ */
 
 function App() {
   return (
     <main>
-      {/* <section>
-        {" "}
-        <Button
-          size="sm"
-          variant="warning"
-          onClick={() => console.log("...logging in")}
-        >
-          Click Here
-        </Button>
-      </section>
-      <section>
-        <Avatar src="./sam.jpeg" alt="Sam George Mathew" />
-        <br />
-        <Avatar>BZ</Avatar>
-        <br />
-        <Avatar />
-      </section> */}
+      <Menu
+        buttonText="Sports"
+        items={["Tennis", "Pickleball", "Racquetball", "Squash"]}
+      />
     </main>
   );
 }
