@@ -1,9 +1,10 @@
 import MenuButton from "./MenuButton";
 import MenuDropdown from "./MenuDropdown";
+import { useState } from "react";
 
 import "./Menu.css";
 
-export default function Menu({ buttonText = "Menu", items }) {
+export default function Menu({ children }) {
   /**
    * Note: leave the div className="menu" here and render
    * the children inside that div. Notice this component will become
@@ -15,17 +16,11 @@ export default function Menu({ buttonText = "Menu", items }) {
    * new version won't be using them, but we'll come back to them
    * later.
    */
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = useState(true);
 
   function toggle() {
     setOpen((prevOpen) => !prevOpen);
   }
 
-  return (
-    <div className="menu">
-      <MenuButton buttonText={buttonText} onClick={toggle} />
-
-      {open && <MenuDropdown items={items} />}
-    </div>
-  );
+  return <div className="menu">{children}</div>;
 }
