@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
 
-export default function MenuButton({ buttonText, onClick }) {
-  return <Button onClick={onClick}>{buttonText}</Button>;
+export default function MenuButton({ children, onClick }) {
+  return <Button onClick={onClick}>{children}</Button>;
 }
