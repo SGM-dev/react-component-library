@@ -1,6 +1,6 @@
 import MenuButton from "./MenuButton";
 import MenuDropdown from "./MenuDropdown";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import "./Menu.css";
 
@@ -11,5 +11,14 @@ export default function Menu({ children }) {
     setOpen((prevOpen) => !prevOpen);
   }
 
-  return <div className="menu">{children}</div>;
+  return (
+    <div className="menu">
+      {React.Children.map(children, (child) => {
+        return React.cloneElement(child, {
+          open,
+          toggle,
+        });
+      })}
+    </div>
+  );
 }
