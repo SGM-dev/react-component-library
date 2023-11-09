@@ -26,14 +26,21 @@ Ex: pass the props as `variant="danger" size="md"` to the component.
 This component uses two props and React children for customization.
 
 1. `src`
-    - this takes in the location of profile photo if it exists.
+
+   - this takes in the location of profile photo if it exists.
 
 2. `alt`
-    - This takes in the alt attribute of the image.
+
+   - This takes in the alt attribute of the image.
 
 3. Provide initials as children to render them in the avatar.
 
 4. Leave the props and children empty if you need the Anonymous variant.
+
+### Menu
+
+- This component uses Context API and children for passing props.
+- The dropdown values are stored in a array which is passed on as a child.
 
 ## Usage
 
