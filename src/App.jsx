@@ -1,6 +1,6 @@
 import "./App.css";
 import Star from "./components/Toggle/Star";
-import Toggle from "./components/Toggle/Toggle";
+import Toggle from "./components/Toggle/index";
 
 function App() {
   const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"];
@@ -8,7 +8,9 @@ function App() {
   return (
     <main>
       <Toggle>
-        <Star />
+        <Toggle.Button>
+          <Star />
+        </Toggle.Button>
       </Toggle>
     </main>
   );
