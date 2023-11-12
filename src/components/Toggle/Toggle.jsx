@@ -11,7 +11,7 @@ export default function Toggle({ children }) {
 
   return (
     <ToggleContext.Provider value={{ on, toggle }}>
-      children
+      {children}
     </ToggleContext.Provider>
   );
 }
