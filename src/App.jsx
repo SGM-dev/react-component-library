@@ -1,5 +1,4 @@
 import "./App.css";
-import Toggle from "./components/Toggle/index";
 import Menu from "./components/Menu/index";
 import Star from "./components/Star";
 
@@ -10,20 +9,15 @@ function App() {
     <main>
       <Star />
       <br />
-      <Toggle>
-        <Menu>
-          <Toggle.Button>
-            <Menu.Button>Sports</Menu.Button>
-          </Toggle.Button>
-          <Toggle.On>
-            <Menu.Dropdown>
-              {sports.map((sport) => (
-                <Menu.Item key={sport}>{sport}</Menu.Item>
-              ))}
-            </Menu.Dropdown>
-          </Toggle.On>
-        </Menu>
-      </Toggle>
+      <Menu>
+        <Menu.Button>Menu</Menu.Button>
+        <Menu.Dropdown>
+          <Menu.Item>Home</Menu.Item>
+          <Menu.Item>About</Menu.Item>
+          <Menu.Item>Contact</Menu.Item>
+          <Menu.Item>Blog</Menu.Item>
+        </Menu.Dropdown>
+      </Menu>
     </main>
   );
 }

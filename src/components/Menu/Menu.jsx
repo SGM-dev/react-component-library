@@ -1,5 +1,10 @@
 import "./Menu.css";
+import Toggle from "../Toggle/index";
 
 export default function Menu({ children }) {
-  return <div className="menu">{children}</div>;
+  return (
+    <Toggle>
+      <div className="menu">{children}</div>
+    </Toggle>
+  );
 }
