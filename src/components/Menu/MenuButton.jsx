@@ -1,7 +1,9 @@
+import { useContext } from "react";
+
 import Button from "../Button/Button";
+import { MenuContext } from "./Menu";
 
 export default function MenuButton({ children }) {
-  return (
-      <Button>{children}</Button>
-  );
+  const { toggleOpen } = useContext(MenuContext);
+  return <Button onClick={toggleOpen}>{children}</Button>;
 }
