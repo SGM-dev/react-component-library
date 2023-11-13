@@ -4,7 +4,7 @@ import Toggle from "./components/Toggle/index";
 function App() {
   return (
     <main>
-      <Toggle>
+      <Toggle onToggle={() => console.log("works")}>
         <Toggle.Button>
           <Toggle.Display>
             {(on) => <div className={`box ${on ? "filled" : ""}`}></div>}
