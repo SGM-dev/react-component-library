@@ -1,16 +1,21 @@
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, useRef } from "react";
 
 const ToggleContext = createContext();
 
 export default function Toggle({ children, onToggle }) {
-  const [on, setOn] = useState(true);
+  const [on, setOn] = useState(false);
+  const firstRender = useRef(true);
 
   function toggle() {
     setOn((prevOn) => !prevOn);
   }
 
   useEffect(() => {
-   onToggle();
+    if (firstRender.current) {
+      firstRender.current = false;
+    } else {
+      onToggle();
+    }
   }, [on]);
 
   return (
