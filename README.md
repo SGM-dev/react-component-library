@@ -64,7 +64,7 @@ To integrate these components into your project:
 
 1. Clone this repository using Git:
    ```bash
-   git clone https://github.com/your-username/react-component-library.git
+   git clone https://github.com/SGM-dev/react-component-library.git
    ```
 2. Choose the components you want to use and copy the respective folders into your project's source directory.
 
