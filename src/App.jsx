@@ -6,7 +6,7 @@ import Menu from "./components/Menu/index";
 function App() {
   return (
     <main>
-      <Menu>
+      <Menu onOpen={() => console.log("Opened/closed")}>
         <Menu.Button>Menu</Menu.Button>
         <Menu.Dropdown>
           <Menu.Item>Home</Menu.Item>
