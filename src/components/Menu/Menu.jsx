@@ -1,9 +1,9 @@
 import "./Menu.css";
 import Toggle from "../Toggle/index";
 
-export default function Menu({ children }) {
+export default function Menu({ children, onOpen }) {
   return (
-    <Toggle>
+    <Toggle onToggle={onOpen}>
       <div className="menu">{children}</div>
     </Toggle>
   );
