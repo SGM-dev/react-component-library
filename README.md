@@ -48,7 +48,7 @@ This component uses two props and React children for customization.
 
 ## Custom Hooks
 
-There are some custom Hooks built along the way.
+There are some custom Hooks built along the way, located at `src/hooks/{customHook}`.
 
 ### useEffectOnUpdate
 
