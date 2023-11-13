@@ -42,6 +42,24 @@ This component uses two props and React children for customization.
 - This component uses Context API and children for passing props.
 - The dropdown values are stored in a array which is passed on as a child.
 
+### Toggle
+
+- This component separates the toggling ability into a headless component for reusability.
+
+## Custom Hooks
+
+There are some custom Hooks built along the way.
+
+### useEffectOnUpdate
+
+- This custom hook only runs on update after firstRender.
+- It takes in two values: a function and an array of dependencies.
+
+### useToggle
+
+- This custom hook replicates the functionality of the headless component, Toggle.
+- It takes in a initial value and a function (which will be run using useEffectOnUpdate hook) as props.
+
 ## Usage
 
 ### Testing the Components
