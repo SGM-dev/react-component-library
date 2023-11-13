@@ -1,10 +1,7 @@
 import "./Menu.css";
-import Toggle from "../Toggle/index";
+import useToggle from "../../hooks/useToggle";
 
 export default function Menu({ children, onOpen }) {
-  return (
-    <Toggle onToggle={onOpen}>
-      <div className="menu">{children}</div>
-    </Toggle>
-  );
+  const [open, toggleOpen] = useToggle();
+  return <div className="menu">{children}</div>;
 }

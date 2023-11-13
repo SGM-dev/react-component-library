@@ -1,11 +1,20 @@
 import "./App.css";
 import Toggle from "./components/Toggle/index";
 import Star from "./components/Star";
+import Menu from "./components/Menu/index";
 
 function App() {
   return (
     <main>
-      <Star />
+      <Menu>
+        <Menu.Button>Menu</Menu.Button>
+        <Menu.Dropdown>
+          <Menu.Item>Home</Menu.Item>
+          <Menu.Item>About</Menu.Item>
+          <Menu.Item>Contact</Menu.Item>
+          <Menu.Item>Blog</Menu.Item>
+        </Menu.Dropdown>
+      </Menu>
     </main>
   );
 }
