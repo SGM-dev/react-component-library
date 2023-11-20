@@ -12,6 +12,7 @@ main {
   width: 30px;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
+  -webkit-user-select: none;
   user-select: none;
   color: white;
 }
