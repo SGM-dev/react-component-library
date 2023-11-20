@@ -21,6 +21,25 @@ This Component uses two props for customization.
 
 Ex: pass the props as `variant="danger" size="md"` to the component.
 
+### Badge
+
+This Component uses two props for customization.
+
+1.  `variant`
+    - `square` for square and
+    - `pill` for pill.
+2.  `color`
+    - `gray`
+    - `red`
+    - `yellow`
+    - `green`
+    - `blue`
+    - `indigo`
+    - `purple`
+    - `pink`
+
+Ex: pass the props as `variant="square" color="gray"` to the component.
+
 ### Avatar
 
 This component uses two props and React children for customization.
