@@ -32,3 +32,28 @@
   color: #92400e;
   background: #fef3c7;
 }
+
+.badge-green {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.badge-blue {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.badge-indigo {
+  color: #3730a3;
+  background: #e0e7ff;
+}
+
+.badge-purple {
+  color: #5b21b6;
+  background: #ede9fe;
+}
+
+.badge-pink {
+  color: #9d174d;
+  background: #fce7f3;
+}
