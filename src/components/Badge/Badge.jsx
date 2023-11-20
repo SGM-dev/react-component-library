@@ -11,7 +11,7 @@ export default function Badge({
   const colorClass = color && `badge-${color}`;
   const variantClass = variant && `badge-${variant}`;
 
-  return (
-    <div className={`badge ${colorClass} ${variantClass}`}>{children}</div>
-  );
+  const allClasses = classNames("badge", colorClass, variantClass, className);
+
+  return <div className={allClasses}>{children}</div>;
 }
