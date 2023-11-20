@@ -1,5 +1,5 @@
 import "./Badge.css";
 
 export default function Badge() {
-  return <h1>This is Badge component</h1>;
+  return <div className="badge gray pill">Badge</div>;
 }
