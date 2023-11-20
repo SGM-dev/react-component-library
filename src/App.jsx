@@ -7,7 +7,7 @@ import Badge from "./components/Badge/Badge";
 function App() {
   return (
     <main>
-      <Badge />
+      <Badge color={"gray"} variant={"pill"}>Badge</Badge>
     </main>
   );
 }

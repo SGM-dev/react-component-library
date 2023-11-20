@@ -10,15 +10,15 @@
   align-items: center;
 }
 
-.square {
+.badge-square {
   border-radius: 4px;
 }
 
-.pill {
+.badge-pill {
   border-radius: 12px;
 }
 
-.gray {
+.badge-gray {
   color: #1f2937;
   background: #f3f4f6;
 }
