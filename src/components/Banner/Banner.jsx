@@ -1,6 +1,11 @@
 import "./Banner.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleCheck,
+  faCircleExclamation,
+  faTriangleExclamation,
+  faCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Banner({ children, variant }) {
   let icon;
@@ -11,15 +16,15 @@ export default function Banner({ children, variant }) {
       break;
 
     case "warning":
-      icon = <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" />;
+      icon = <FontAwesomeIcon icon={faTriangleExclamation} />;
       break;
 
     case "error":
-      icon = <FontAwesomeIcon icon="fa-solid fa-circle-xmark" />;
+      icon = <FontAwesomeIcon icon={faCircleXmark} />;
       break;
 
     case "neutral":
-      icon = <FontAwesomeIcon icon="fa-solid fa-circle-exclamation" />;
+      icon = <FontAwesomeIcon icon={faCircleExclamation} />;
       break;
   }
 

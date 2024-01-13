@@ -4,7 +4,7 @@ import Banner from "./components/Banner";
 function App() {
   return (
     <main>
-      <Banner variant={"success"}>
+      <Banner variant={"neutral"}>
         <Banner.Title>Congratulations!</Banner.Title>
         <Banner.Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
