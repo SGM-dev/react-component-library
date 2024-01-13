@@ -1,13 +1,16 @@
 import "./App.css";
-import Toggle from "./components/Toggle/index";
-import Star from "./components/Star";
-import Menu from "./components/Menu/index";
-import Badge from "./components/Badge/Badge";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <main>
-      <Badge color={"gray"} variant={"pill"}>Badge</Badge>
+      <Banner>
+        <Banner.Title>Congratulations!</Banner.Title>
+        <Banner.Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          pariatur, ipsum similique veniam.
+        </Banner.Text>
+      </Banner>
     </main>
   );
 }
