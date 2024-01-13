@@ -1,0 +1,107 @@
+/* GLOBAL STYLING */
+
+.banner {
+  display: flex;
+  width: 896px;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 6px;
+}
+
+.banner-content {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.banner-content > * {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-content > h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.banner-content > p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SUCCESS */
+
+.banner.success {
+  background: #ecfdf5;
+}
+
+.banner.success > svg {
+  color: #34d399;
+}
+
+.banner.success > .banner-content > h2 {
+  color: #065f46;
+}
+
+.banner.success > .banner-content > p {
+  color: #047857;
+}
+
+/* WARNING */
+
+.banner.warning {
+  background: #fffbeb;
+}
+
+.banner.warning > svg {
+  color: #fbbf24;
+}
+
+.banner.warning > .banner-content > h2 {
+  color: #92400e;
+}
+
+.banner.warning > .banner-content > p {
+  color: #b45309;
+}
+
+/* ERROR */
+
+.banner.error {
+  background: #fef2f2;
+}
+
+.banner.error > svg {
+  color: #f87171;
+}
+
+.banner.error > .banner-content > h2 {
+  color: #92400e;
+}
+
+.banner.error > .banner-content > p {
+  color: #b45309;
+}
+
+/* NEUTRAL */
+
+.banner.neutral {
+  background: #eff6ff;
+}
+
+.banner.neutral > svg {
+  color: #60a5fa;
+}
+
+.banner.neutral > .banner-content > h2 {
+  color: #1e40af;
+}
+
+.banner.neutral > .banner-content > p {
+  color: #1c51b9;
+}

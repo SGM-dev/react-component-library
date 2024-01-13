@@ -40,6 +40,10 @@ This Component uses two props for customization.
 
 Ex: pass the props as `variant="square" color="gray"` to the component.
 
+### Banner
+
+This Component uses Context API and children for passing props.
+
 ### Avatar
 
 This component uses two props and React children for customization.
