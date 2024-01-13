@@ -6,8 +6,9 @@ import {
   faTriangleExclamation,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from "prop-types";
 
-export default function Banner({ children, variant }) {
+function Banner({ children, variant }) {
   let icon;
 
   switch (variant) {
@@ -35,3 +36,11 @@ export default function Banner({ children, variant }) {
     </div>
   );
 }
+
+Banner.propTypes = {
+  variant: PropTypes.oneOf(["success", "warning", "error", "neutral"])
+    .isRequired,
+  children: PropTypes.node,
+};
+
+export default Banner;
