@@ -1,6 +1,6 @@
 import "./Card.css";
 import PropTypes from "prop-types";
 
-function CardTitle() {}
-
-export default CardTitle;
+export default function CardTitle({ children }) {
+  return <h2 className="card-title">{children}</h2>;
+}

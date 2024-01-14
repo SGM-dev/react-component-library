@@ -1,6 +1,6 @@
 import "./Card.css";
 import PropTypes from "prop-types";
 
-function Card() {}
-
-export default Card;
+export default function Card({ children }) {
+  return <div className="card-container">{children}</div>;
+}

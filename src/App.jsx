@@ -1,19 +1,28 @@
 import "./App.css";
-import Banner from "./components/Banner";
+import Card from "./components/Card";
 
 function App() {
   return (
     <main>
-      <Banner variant={"neutral"}>
-        <Banner.Title>Congratulations!</Banner.Title>
-        <Banner.Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          pariatur, ipsum similique veniam.
-        </Banner.Text>
-      </Banner>
+      <Card>
+        <Card.Icon></Card.Icon>
+        <Card.Title>Easy Deployment</Card.Title>
+        <Card.Desc>
+          Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+          magna sit morbi lobortis.
+        </Card.Desc>
+      </Card>
     </main>
   );
 }
+
+//<Banner variant={"neutral"}>
+//  <Banner.Title>Congratulations!</Banner.Title>
+//  <Banner.Text>
+//    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur,
+//    ipsum similique veniam.
+//  </Banner.Text>
+//</Banner>;
 
 // Using Toggle.Display for the render props
 // <Toggle onToggle={() => {console.log("Toggled")}}>
