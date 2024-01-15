@@ -1,6 +1,12 @@
 import "./Card.css";
-import PropTypes from "prop-types";
+import classNames from "classnames";
 
-export default function CardTitle({ children }) {
-  return <h2 className="card-title">{children}</h2>;
+export default function CardTitle({ children, className, ...rest }) {
+  const allClasses = classNames("card-title", className);
+
+  return (
+    <h2 className={allClasses} {...rest}>
+      {children}
+    </h2>
+  );
 }

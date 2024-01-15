@@ -1,11 +1,15 @@
 import "./App.css";
 import Card from "./components/Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <main>
       <Card>
-        <Card.Icon></Card.Icon>
+        <Card.Icon>
+          <FontAwesomeIcon icon={faCloudArrowUp} />
+        </Card.Icon>
         <Card.Title>Easy Deployment</Card.Title>
         <Card.Desc>
           Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et

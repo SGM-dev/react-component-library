@@ -1,6 +1,12 @@
 import "./Card.css";
-import PropTypes from "prop-types";
+import classNames from "classnames";
 
-export default function CardDesc({ children }) {
-  return <p className="card-description">{children}</p>;
+export default function CardDesc({ children, className, ...rest }) {
+  const allClasses = classNames("card-description", className);
+  
+  return (
+    <p className={allClasses} {...rest}>
+      {children}
+    </p>
+  );
 }
