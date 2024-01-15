@@ -1,18 +1,27 @@
 import useEffectOnUpdate from "./useEffectOnUpdate";
 import { useState } from "react";
 
-export default function useHover({ ref, onHover }) {
+export default function useHover({ ref, onHover, onLeave }) {
   const [isHovered, setIsHovered] = useState(false);
   useEffectOnUpdate(() => {
     const handleMouseOver = () => {
-      setIsHovered(true);
-      if (isHovered) {
-        onHover();
+      const isHoveringInside = ref.current.contains(event.relatedTarget);
+      if (!isHovered && !isHoveringInside) {
+        setIsHovered(true);
+        if (onHover) {
+          onHover();
+        }
       }
     };
 
     const handleMouseOut = () => {
-      setIsHovered(false);
+      const isLeavingOutside = !ref.current.contains(event.relatedTarget);
+      if (isHovered && isLeavingOutside) {
+        setIsHovered(false);
+        if (onLeave) {
+          onLeave();
+        }
+      }
     };
 
     const element = ref.current;
@@ -26,7 +35,7 @@ export default function useHover({ ref, onHover }) {
       element.removeEventListener("mouseover", handleMouseOver);
       element.removeEventListener("mouseout", handleMouseOut);
     };
-  }, [ref, onHover]);
+  }, [ref, onHover, isHovered]);
 
   return isHovered;
 }
