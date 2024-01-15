@@ -1,7 +1,8 @@
 import "./Card.css";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
-export default function CardIcon({ children, className, ...rest }) {
+function CardIcon({ children, className, ...rest }) {
   const allClasses = classNames("card-icon", className);
 
   return (
@@ -10,3 +11,7 @@ export default function CardIcon({ children, className, ...rest }) {
     </div>
   );
 }
+
+CardIcon.propTypes = { children: PropTypes.node, className: PropTypes.string };
+
+export default CardIcon;
