@@ -1,24 +1,37 @@
 import "./App.css";
-import Card from "./components/Card";
+import SimpleTestimonial from "./components/Testimonial/simple-centered";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <main>
-      <Card>
-        <Card.Icon>
-          <FontAwesomeIcon icon={faCloudArrowUp} />
-        </Card.Icon>
-        <Card.Title>Easy Deployment</Card.Title>
-        <Card.Desc>
-          Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
-          magna sit morbi lobortis.
-        </Card.Desc>
-      </Card>
+      <SimpleTestimonial>
+        <SimpleTestimonial.Image src="src\assets\Logo.svg" />
+        <SimpleTestimonial.Quote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
+          laborum sed rerum et corporis.”
+        </SimpleTestimonial.Quote>
+        <SimpleTestimonial.Citation>
+          <SimpleTestimonial.Author>May Andersons</SimpleTestimonial.Author>/
+          <SimpleTestimonial.Role>Workcation, CTO</SimpleTestimonial.Role>
+        </SimpleTestimonial.Citation>
+      </SimpleTestimonial>
     </main>
   );
 }
+
+//      <Card>
+//<Card.Icon>
+//<FontAwesomeIcon icon={faCloudArrowUp} />
+//</Card.Icon>
+//<Card.Title>Easy Deployment</Card.Title>
+//<Card.Desc>
+//Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+//magna sit morbi lobortis.
+//</Card.Desc>
+//</Card>
 
 //<Banner variant={"neutral"}>
 //  <Banner.Title>Congratulations!</Banner.Title>
