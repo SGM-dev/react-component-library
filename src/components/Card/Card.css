@@ -7,6 +7,9 @@
   background: #f9fafb;
   max-width: 330px;
 }
+.shadow {
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
 
 .card-icon {
   border-radius: 6px;
