@@ -1,23 +1,29 @@
 import "./App.css";
-import SimpleTestimonial from "./components/Testimonial/simple-centered";
+import OverlappingTestimonial from "./components/Testimonial/ovelapping-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <main>
-      <SimpleTestimonial>
-        <SimpleTestimonial.Image src="src\assets\Logo.svg" />
-        <SimpleTestimonial.Quote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
-          laborum sed rerum et corporis.”
-        </SimpleTestimonial.Quote>
-        <SimpleTestimonial.Citation>
-          <SimpleTestimonial.Author>May Andersons</SimpleTestimonial.Author>/
-          <SimpleTestimonial.Role>Workcation, CTO</SimpleTestimonial.Role>
-        </SimpleTestimonial.Citation>
-      </SimpleTestimonial>
+      <OverlappingTestimonial>
+        <OverlappingTestimonial.Image src="src\assets\may-andersons.png" />
+        <OverlappingTestimonial.Content>
+          <OverlappingTestimonial.Quote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+            in laborum sed rerum et corporis.
+          </OverlappingTestimonial.Quote>
+          <OverlappingTestimonial.Citation>
+            <OverlappingTestimonial.Author>
+              May Andersons
+            </OverlappingTestimonial.Author>
+            <OverlappingTestimonial.Role>
+              Workcation, CTO
+            </OverlappingTestimonial.Role>
+          </OverlappingTestimonial.Citation>
+        </OverlappingTestimonial.Content>
+      </OverlappingTestimonial>
     </main>
   );
 }
@@ -59,7 +65,7 @@ function App() {
 //   <div className="box"></div>
 // </Toggle.Off>
 
-// Simple Star component that uses the Toggle component internally
+// Overlapping Star component that uses the Toggle component internally
 // <Star />
 
 // <br />
