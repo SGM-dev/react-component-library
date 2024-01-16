@@ -27,6 +27,9 @@ function Banner({ children, variant }) {
     case "neutral":
       icon = <FontAwesomeIcon icon={faCircleExclamation} />;
       break;
+    default:
+      icon = <FontAwesomeIcon icon={faCircleExclamation} />;
+      break;
   }
 
   return (

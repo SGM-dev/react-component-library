@@ -1,31 +1,51 @@
 import "./App.css";
-import OverlappingTestimonial from "./components/Testimonial/ovelapping-image";
+import Tooltip from "./components/Tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faInbox, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <main>
-      <OverlappingTestimonial>
-        <OverlappingTestimonial.Image src="src\assets\may-andersons.png" />
-        <OverlappingTestimonial.Content>
-          <OverlappingTestimonial.Quote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
-            in laborum sed rerum et corporis.
-          </OverlappingTestimonial.Quote>
-          <OverlappingTestimonial.Citation>
-            <OverlappingTestimonial.Author>
-              May Andersons
-            </OverlappingTestimonial.Author>
-            <OverlappingTestimonial.Role>
-              Workcation, CTO
-            </OverlappingTestimonial.Role>
-          </OverlappingTestimonial.Citation>
-        </OverlappingTestimonial.Content>
-      </OverlappingTestimonial>
+      <Tooltip>
+        <Tooltip.Icon>
+          <FontAwesomeIcon icon={faInbox} />
+        </Tooltip.Icon>
+        <Tooltip.Content>
+          <Tooltip.Title>Archive notes</Tooltip.Title>
+          <Tooltip.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum
+            tenetur.
+          </Tooltip.Text>
+        </Tooltip.Content>
+        <Tooltip.Action>
+          <FontAwesomeIcon icon={faXmark} />
+        </Tooltip.Action>
+      </Tooltip>
     </main>
   );
+}
+
+// Testimonial
+
+{
+  /* <OverlappingTestimonial>
+<OverlappingTestimonial.Image src="src\assets\may-andersons.png" />
+<OverlappingTestimonial.Content>
+  <OverlappingTestimonial.Quote>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+    expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+    in laborum sed rerum et corporis.
+  </OverlappingTestimonial.Quote>
+  <OverlappingTestimonial.Citation>
+    <OverlappingTestimonial.Author>
+      May Andersons
+    </OverlappingTestimonial.Author>
+    <OverlappingTestimonial.Role>
+      Workcation, CTO
+    </OverlappingTestimonial.Role>
+  </OverlappingTestimonial.Citation>
+</OverlappingTestimonial.Content>
+</OverlappingTestimonial> */
 }
 
 //      <Card>
