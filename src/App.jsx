@@ -6,7 +6,7 @@ import { faInbox, faXmark } from "@fortawesome/free-solid-svg-icons";
 function App() {
   return (
     <main>
-      <Tooltip>
+      <Tooltip variant={"light"} colorScheme={"green"}>
         <Tooltip.Icon>
           <FontAwesomeIcon icon={faInbox} />
         </Tooltip.Icon>
