@@ -3,7 +3,7 @@ import { TooltipContext } from "./Tooltip";
 import { useContext } from "react";
 
 export default function TooltipAction({ children, className }) {
-  const { variant, colorScheme } = useContext(TooltipContext);
+  const { variant, colorScheme, toggleOpen } = useContext(TooltipContext);
   const allClasses = classNames(
     className,
     variant,
@@ -11,5 +11,9 @@ export default function TooltipAction({ children, className }) {
     "tooltip-action"
   );
 
-  return <div className={allClasses}>{children}</div>;
+  return (
+    <div className={allClasses} onClick={toggleOpen}>
+      {children}
+    </div>
+  );
 }

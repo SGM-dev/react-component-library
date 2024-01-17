@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.tooltip-container.hidden {
+  display: none;
+}
+
 .tooltip-container {
   display: flex;
   width: 384px;
@@ -47,6 +51,7 @@
 
 .tooltip-action {
   font-size: 20px;
+  cursor: pointer;
 }
 
 :not(.monochrome).tooltip-action.bold {
