@@ -1,12 +1,16 @@
 import classNames from "classnames";
+import { TooltipContext } from "./Tooltip";
+import { useContext } from "react";
 
 export default function TooltipContent({ children, className }) {
-  const allClasses = classNames(className, "tooltip-content");
+  const { variant, colorScheme } = useContext(TooltipContext);
+
+  const allClasses = classNames(className, variant, colorScheme, "");
 
   return (
-    <div className={allClasses}>
+    <div className={`${allClasses} tooltip-content`}>
       {children}
-      <div className="triangle-down"></div>
+      <div className={`${allClasses} triangle-down`}></div>
     </div>
   );
 }

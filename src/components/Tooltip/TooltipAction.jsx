@@ -1,7 +1,15 @@
 import classNames from "classnames";
+import { TooltipContext } from "./Tooltip";
+import { useContext } from "react";
 
 export default function TooltipAction({ children, className }) {
-  const allClasses = classNames(className, "tooltip-action");
+  const { variant, colorScheme } = useContext(TooltipContext);
+  const allClasses = classNames(
+    className,
+    variant,
+    colorScheme,
+    "tooltip-action"
+  );
 
   return <div className={allClasses}>{children}</div>;
 }
