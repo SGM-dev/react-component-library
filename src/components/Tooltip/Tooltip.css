@@ -7,25 +7,16 @@
   display: flex;
   width: 384px;
   padding: 16px;
-  align-items: flex-start;
   gap: 16px;
   border-radius: 8px;
-  background: #262626;
-
-  /* /shadow/lg */
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05),
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.tooltip-icon {
-  color: #c7c7c7;
 }
 
 .tooltip-content {
   display: flex;
   width: 280px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   position: relative;
 }
@@ -35,34 +26,177 @@
   height: 0;
   border-left: 17px solid transparent;
   border-right: 17px solid transparent;
-  border-top: 20px solid #262626;
+  border-top: 20px solid;
   position: absolute;
   bottom: -50%;
 }
 
 .tooltip-title {
-  color: #fff;
-
-  /* text-sm/leading-5/font-medium */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 142.857% */
 }
 
 .tooltip-text {
-  color: #c7c7c7;
-
-  /* text-sm/leading-5/font-normal */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
 }
 
 .tooltip-action {
-  color: #c7c7c7;
   font-size: 20px;
+}
+
+:not(.monochrome).tooltip-action.bold {
+  color: #d8d8d8;
+}
+
+/* Blue  */
+
+/* Bold Variant */
+
+.monochrome.bold {
+  color: #c7c7c7;
+  background: #262626;
+}
+
+.triangle-down.monochrome.bold {
+  border-top-color: #262626;
+  background: none;
+}
+
+.tooltip-title.monochrome.bold {
+  color: #fff;
+}
+
+/* Light Variant */
+
+.monochrome.light {
+  color: #6b7280;
+  background: #fff;
+}
+
+.triangle-down.monochrome.light {
+  border-top-color: #fff;
+  background: none;
+}
+
+.tooltip-title.monochrome.light {
+  color: #111827;
+}
+
+/* Blue  */
+
+/* Bold Variant */
+
+.blue.bold {
+  color: #e8edff;
+  background: #1e40af;
+}
+
+.tooltip-icon.blue.bold {
+  color: #7ea6f2;
+}
+
+.triangle-down.blue.bold {
+  border-top-color: #1e40af;
+  background: none;
+}
+
+.tooltip-title.blue.bold {
+  color: #fff;
+}
+
+/* Light Variant */
+
+.blue.light {
+  color: #1c51b9;
+  background: #e0e7ff;
+}
+
+.triangle-down.blue.light {
+  border-top-color: #e0e7ff;
+  background: none;
+}
+
+.tooltip-title.blue.light {
+  color: #1e40af;
+}
+
+/* Pink  */
+
+/* Bold Variant */
+
+.pink.bold {
+  color: #e8edff;
+  background: #a9229b;
+}
+
+.tooltip-icon.pink.bold {
+  color: #f462e6;
+}
+
+.triangle-down.pink.bold {
+  border-top-color: #a9229b;
+  background: none;
+}
+
+.tooltip-title.pink.bold {
+  color: #fff;
+}
+
+/* Light Variant */
+
+.pink.light {
+  color: #c7369e;
+  background: #fff3fc;
+}
+
+.triangle-down.pink.light {
+  border-top-color: #fff3fc;
+  background: none;
+}
+
+.tooltip-title.pink.light {
+  color: #a9229b;
+}
+
+/* Green  */
+
+/* Bold Variant */
+
+.green.bold {
+  color: #e3ffe9;
+  background: #47aa5d;
+}
+
+.tooltip-icon.green.bold {
+  color: #c1ffcf;
+}
+
+.triangle-down.green.bold {
+  border-top-color: #47aa5d;
+  background: none;
+}
+
+.tooltip-title.green.bold {
+  color: #fff;
+}
+
+/* Light Variant */
+
+.green.light {
+  color: #3c8c4e;
+  background: #e7fff3;
+}
+
+.triangle-down.green.light {
+  border-top-color: #e7fff3;
+  background: none;
+}
+
+.tooltip-title.green.light {
+  color: #137a2a;
 }
