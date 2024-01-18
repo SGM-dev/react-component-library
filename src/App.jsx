@@ -1,26 +1,16 @@
 import "./App.css";
-import Tooltip from "./components/Tooltip";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Toast from "./components/Toast";
 
 function App() {
   return (
     <main>
-      <Tooltip variant={"light"} colorScheme={"green"}>
-        <Tooltip.Icon>
-          <FontAwesomeIcon icon={faInbox} />
-        </Tooltip.Icon>
-        <Tooltip.Content>
-          <Tooltip.Title>Archive notes</Tooltip.Title>
-          <Tooltip.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum
-            tenetur.
-          </Tooltip.Text>
-        </Tooltip.Content>
-        <Tooltip.Action>
-          <FontAwesomeIcon icon={faXmark} />
-        </Tooltip.Action>
-      </Tooltip>
+      <Toast variant="success">
+        <Toast.Icon />
+        <Toast.Content>
+          <Toast.Title>Success</Toast.Title>
+          <Toast.Text>Your work has been saved</Toast.Text>
+        </Toast.Content>
+      </Toast>
     </main>
   );
 }
