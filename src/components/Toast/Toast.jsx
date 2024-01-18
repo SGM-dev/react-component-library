@@ -1,11 +1,28 @@
 import classNames from "classnames";
-import { createContext } from "react";
+import { createContext, useRef, useState } from "react";
 import "./Toast.css";
+import useTimeout from "../../hooks/useTimeout";
 
 const ToastContext = createContext();
 
-export default function Toast({ children, variant, className, ...rest }) {
-  const allClasses = classNames(variant, className, "toast-container");
+export default function Toast({
+  children,
+  variant,
+  className,
+  delay,
+  ...rest
+}) {
+  let isHidden = false;
+  useTimeout(() => (isHidden = true), delay);
+
+  let hiddenClass = isHidden ? "hidden" : "";
+
+  let allClasses = classNames(
+    variant,
+    className,
+    hiddenClass,
+    "toast-container"
+  );
 
   return (
     <ToastContext.Provider value={{ variant }}>
