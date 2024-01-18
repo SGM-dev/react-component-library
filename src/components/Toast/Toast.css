@@ -28,7 +28,7 @@
 
 .toast-title,
 .toast-text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
@@ -52,4 +52,58 @@
 
 .success.toast-text {
   color: #047857;
+}
+
+/* WARNING */
+
+.warning.toast-container {
+  background: #fffbeb;
+}
+
+.warning.toast-icon {
+  color: #fbbf24;
+}
+
+.warning.toast-title {
+  color: #92400e;
+}
+
+.warning.toast-text {
+  color: #b45309;
+}
+
+/* INFO */
+
+.info.toast-container {
+  background: #eff6ff;
+}
+
+.info.toast-icon {
+  color: #60a5fa;
+}
+
+.info.toast-title {
+  color: #1e40af;
+}
+
+.info.toast-text {
+  color: #1c51b9;
+}
+
+/* ERROR */
+
+.error.toast-container {
+  background: #fef2f2;
+}
+
+.error.toast-icon {
+  color: #f87171;
+}
+
+.error.toast-title {
+  color: #92400e;
+}
+
+.error.toast-text {
+  color: #b45309;
 }
