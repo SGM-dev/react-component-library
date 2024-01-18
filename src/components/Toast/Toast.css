@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.toast-container {
+  display: flex;
+  width: 384px;
+  padding: 16px;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+.toast-content {
+  display: flex;
+  padding-top: 2px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toast-icon {
+  margin-top: 3px;
+}
+
+.toast-title {
+  font-weight: 500;
+}
+
+.toast-title,
+.toast-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.toast-text {
+  font-weight: 400;
+}
+
+/* SUCCESS */
+
+.success.toast-container {
+  background: #ecfdf5;
+}
+
+.success.toast-icon {
+  color: #34d399;
+}
+
+.success.toast-title {
+  color: #065f46;
+}
+
+.success.toast-text {
+  color: #047857;
+}
