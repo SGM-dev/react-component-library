@@ -9,17 +9,28 @@ export default function Toast({
   children,
   variant,
   className,
+  position,
   delay,
   ...rest
 }) {
-  let isHidden = false;
-  useTimeout(() => (isHidden = true), delay);
+  let initialRender = useRef(true);
+  const [isHidden, setIsHidden] = useState(false);
+
+  const hideToast = () => {
+    if (initialRender) {
+      initialRender.current = false;
+      setIsHidden(true);
+    }
+  };
+
+  useTimeout(hideToast, delay);
 
   let hiddenClass = isHidden ? "hidden" : "";
 
   let allClasses = classNames(
     variant,
     className,
+    position,
     hiddenClass,
     "toast-container"
   );
