@@ -4,7 +4,7 @@ import Toast from "./components/Toast";
 function App() {
   return (
     <main>
-      <Toast variant="success" delay={5000}>
+      <Toast variant="success" position={"top"} delay={5000}>
         <Toast.Icon />
         <Toast.Content>
           <Toast.Title>Success</Toast.Title>
