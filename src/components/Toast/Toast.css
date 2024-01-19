@@ -9,6 +9,23 @@
   padding: 16px;
   gap: 12px;
   border-radius: 8px;
+  position: fixed;
+}
+
+.bottom {
+  bottom: 20px;
+}
+
+.top {
+  top: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+.left {
+  left: 20px;
 }
 
 .toast-content {
@@ -106,4 +123,9 @@
 
 .error.toast-text {
   color: #b45309;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
