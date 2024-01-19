@@ -34,7 +34,7 @@
   color: #fff;
 
   /* text-2xl/leading-8/font-medium */
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -42,7 +42,7 @@
 
 .overlapping-testimonial.author {
   color: #fff;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -53,7 +53,7 @@
   color: #fff;
 
   /* text-base/leading-6/font-medium */
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

@@ -36,14 +36,14 @@
 }
 
 .tooltip-title {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
 }
 
 .tooltip-text {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
