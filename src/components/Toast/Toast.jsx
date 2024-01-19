@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { createContext, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import "./Toast.css";
 import useTimeout from "../../hooks/useTimeout";
 
@@ -35,12 +36,13 @@ export default function Toast({
     "toast-container"
   );
 
-  return (
+  return createPortal(
     <ToastContext.Provider value={{ variant }}>
       <div className={allClasses} {...rest}>
         {children}
       </div>
-    </ToastContext.Provider>
+    </ToastContext.Provider>,
+    document.body
   );
 }
 
